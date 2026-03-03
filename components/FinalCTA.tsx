@@ -46,6 +46,17 @@ const FinalCTA: React.FC = () => {
             Leve a tecnologia UCX para dentro da sua área e sinta a diferença no primeiro encaixe.
           </p>
 
+          <div className="flex flex-col items-center mb-10">
+            <div className="flex items-center gap-3 mb-1">
+              <span className="text-slate-500 line-through text-xl">R$ 329,90</span>
+              <span className="bg-ucx-cyan/20 text-ucx-cyan text-xs font-bold px-2 py-1 rounded uppercase">10% OFF</span>
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-white text-6xl font-black tracking-tighter">R$ 299,90</span>
+            </div>
+            <p className="text-slate-400 text-sm mt-2">Garanta a sua antes que o estoque acabe</p>
+          </div>
+
           <div className="inline-block p-1 rounded-2xl bg-gradient-to-r from-ucx-cyan via-blue-500 to-ucx-cyan">
              <div className="bg-slate-950 rounded-xl p-8 md:p-12">
                 <div className="flex flex-col items-center gap-2 mb-8 text-yellow-500 font-bold bg-yellow-500/10 py-2 px-4 rounded-full inline-flex">
@@ -53,6 +64,15 @@ const FinalCTA: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-6 justify-center">
+                    <a
+                        href="https://ucxgoalkeeper.lojavirtualnuvem.com.br/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-3 px-8 py-5 bg-ucx-cyan hover:bg-cyan-400 text-slate-950 text-lg font-bold rounded-xl transition-all shadow-lg hover:shadow-cyan-500/25 transform hover:-translate-y-1 w-full md:w-auto"
+                    >
+                        <ShoppingCart size={24} />
+                        COMPRAR NO SITE
+                    </a>
                     <button
                         onClick={handleOpenModal}
                         className="flex items-center justify-center gap-3 px-8 py-5 bg-green-500 hover:bg-green-400 text-slate-950 text-lg font-bold rounded-xl transition-all shadow-lg hover:shadow-green-500/25 transform hover:-translate-y-1 w-full md:w-auto"

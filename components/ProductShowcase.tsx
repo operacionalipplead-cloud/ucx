@@ -8,11 +8,10 @@ const ProductShowcase: React.FC = () => {
   const thumbnailsRef = useRef<HTMLDivElement>(null);
 
   const images = [
-    "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_fut655fut655fut6201_converted.webp",
+    "https://painel.lipplead.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-11.13.08.jpeg",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_pm52gapm52gapm52201_converted.webp",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_hm7buvhm7buvhm7b201_converted.webp",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_jjfndqjjfndqjjfn201_converted.webp",
-    "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_gkuttwgkuttwgkut201_converted-1.webp",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_jmgz4ijmgz4ijmgz201_converted-1.webp",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_qps65gqps65gqps6201201_converted.webp",
     "https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_36dv6a36dv6a36dv201_converted.webp"

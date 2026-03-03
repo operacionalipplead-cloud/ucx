@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Zap, ShoppingCart, MessageCircle } from 'lucide-react';
 
 const LightningBeam = ({ delay, duration, className }: { delay: number; duration: number; className?: string }) => (
   <motion.div
@@ -73,9 +73,20 @@ const Hero: React.FC = () => {
                 CONTACTGRIP PRO
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-400 max-w-xl font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-400 max-w-xl font-light leading-relaxed mb-8">
               A fusão perfeita entre a aderência do látex 4mm e a liberdade do NeoFlex Pro™. Projetada para quem não aceita falhas nos momentos decisivos.
             </p>
+
+            <div className="flex flex-col gap-1 mb-8">
+              <div className="flex items-center gap-3">
+                <span className="text-slate-500 line-through text-lg decoration-red-500/50">R$ 329,90</span>
+                <span className="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-500/20 uppercase">Economize R$ 30,00</span>
+              </div>
+              <div className="flex items-baseline gap-2">
+                <span className="text-white text-5xl font-black tracking-tight">R$ 299,90</span>
+                <span className="text-slate-400 text-sm font-medium">à vista</span>
+              </div>
+            </div>
           </motion.div>
 
         {/* 2. Hero Visual (Image) */}
@@ -99,7 +110,7 @@ const Hero: React.FC = () => {
                     {/* Centered Image - Changed to object-cover to fill card */}
                     <div className="absolute inset-0 flex items-center justify-center z-10">
                         <img 
-                            src="https://painel.lipplead.com/wp-content/uploads/2026/02/Gemini_Generated_Image_4bc71v4bc71v4bc7-1-_1_-scaled.webp" 
+                            src="https://painel.lipplead.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-10-at-21.12.57.jpeg" 
                             alt="Luva UCX Pro Detail" 
                             className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 will-change-transform"
                         />
@@ -140,20 +151,23 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 lg:col-start-1 lg:row-start-2 lg:self-start"
           >
             <a 
-              href="https://wa.me/5527997088071"
+              href="https://ucxgoalkeeper.lojavirtualnuvem.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-ucx-cyan hover:bg-cyan-400 text-ucx-navy text-lg font-bold rounded-lg transition-all transform hover:scale-[1.02] shadow-[0_0_20px_rgba(6,182,212,0.3)] relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Quero Grip Profissional
-                <ArrowRight size={20} />
+                <ShoppingCart size={20} />
+                Comprar no Site
               </span>
               <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
             </a>
             <a 
-              href="#tech"
-              className="inline-flex items-center justify-center px-8 py-4 bg-slate-800/50 hover:bg-slate-800 border border-slate-700 text-white font-semibold rounded-lg transition-all backdrop-blur-sm"
+              href="https://wa.me/5527997088071"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-slate-800/50 hover:bg-green-600/90 border border-slate-700 hover:border-green-500 text-white font-semibold rounded-lg transition-all backdrop-blur-sm group"
             >
-              Ver Detalhes Técnicos
+              <MessageCircle size={20} className="group-hover:text-white transition-colors" />
+              WhatsApp
             </a>
           </motion.div>
 
